@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <form action="/student/register/" method="post">
+        {% csrf_token %}
+        <p><label for="na">用户名：</label><input type="text" name="uname" id="na"></p>
+        <p><label for="pw">密&emsp;码：</label><input type="password" name="pwd" id="pw"></p>
+        <p>&emsp;&emsp;&emsp;&emsp;<input type="submit" value="注册"></p>
+    </form>
+</body>
+</html>
