@@ -8,4 +8,5 @@ urlpatterns=[
     url('^$', views.index_view),
     url('^login/', views.login_view),
     url('^register/', views.register_view),
+    url('^show/', views.show_view),
 ]

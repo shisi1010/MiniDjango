@@ -7,8 +7,8 @@
 <body>
     <form action="/student/login/" method="post">
         {% csrf_token %}
-        <p><label>用户名：</label><input type="text" name="uname"></p>
-        <p><label>密&emsp;码：</label><input type="password" name="pwd"></p>
+        <p><label for="un">用户名：</label><input type="text" name="uname" id="un"></p>
+        <p><label for="pw">密&emsp;码：</label><input type="password" name="pwd" id="pw"></p>
         <p>&emsp;&emsp;&emsp;&emsp;<input type="submit" value="登陆"></p>
     </form>
 </body>

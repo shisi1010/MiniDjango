@@ -47,3 +47,10 @@ def register_view(request):
             return HttpResponse('注册成功！')
 
     return HttpResponse('注册失败！')
+
+
+def show_view(request):
+    # 1.查询stu_student表中的所有数据
+    stus = Student.objects.all()
+
+    return render(request, 'showdate.html', {'students': stus})
